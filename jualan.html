@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Makan Slebeww</title>
+    <style>
+        /* ===== STYLE CSS ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fff8f0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d35400;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .info {
+            padding: 20px;
+        }
+
+        .nama-menu {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .deskripsi {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-bottom: 12px;
+        }
+
+        .harga {
+            font-size: 16px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+
+        .btn-beli {
+            width: 100%;
+            padding: 10px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-beli:hover {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🍽️ WARUNG MAKAN ENAK 🍽️</h1>
+    <p class="subtitle">Pesan makanan favoritmu, dijamin nagih!</p>
+
+    <div class="container">
+
+        <!-- Menu 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Nasi Goreng">
+            <div class="info">
+                <div class="nama-menu">Nasi Goreng Spesial</div>
+                <div class="deskripsi">Nasi goreng dengan ayam, sosis, dan telur. Bumbu medok!</div>
+                <div class="harga">Rp 18.000</div>
+                <button class="btn-beli">Tambah ke Pesanan</button>
+            </div>
+        </div>
+
+        <!-- Menu 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400" alt="Burger">
+            <div class="info">
+                <div class="nama-menu">Beef Burger Jumbo</div>
+                <div class="deskripsi">Daging sapi asli, keju lumer, sayur segar, dan saus rahasia.</div>
+                <div class="harga">Rp 25.000</div>
+                <button class="btn-beli">Tambah ke Pesanan</button>
+            </div>
+        </div>
+
+        <!-- Menu 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400" alt="Pizza">
+            <div class="info">
+                <div class="nama-menu">Pizza Meat Lovers</div>
+                <div class="deskripsi">Topping daging melimpah, keju mozarella yang pas banget.</div>
+                <div class="harga">Rp 35.000</div>
+                <button class="btn-beli">Tambah ke Pesanan</button>
+            </div>
+        </div>
+
+        <!-- Menu 4 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400" alt="Es Teh">
+            <div class="info">
+                <div class="nama-menu">Es Teh Jumbo</div>
+                <div class="deskripsi">Teh tawar manis dingin, seger banget buat nemenin makan.</div>
+                <div class="harga">Rp 5.000</div>
+                <button class="btn-beli">Tambah ke Pesanan</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
